@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html ng-app="directivePractice">
+
 <head>
     <meta charset="utf-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Lesson Hider</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
 </head>
+
 <body ng-controller="LessonController">
-  <lesson-hider></lesson-hider>
+  <ul>
+    <lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+
+  </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
@@ -15,4 +20,5 @@
     <script src="js/LessonService.js"></script>
     <script src="js/lessonHiderDirective.js"></script>
 </body>
+
 </html>
