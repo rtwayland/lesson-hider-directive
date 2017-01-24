@@ -1,1 +1,5 @@
-<li>{{lesson}}</li>
+<p>
+  <span>{{lesson}}</span>
+  <button type="button" ng-click="dayAlert({ lesson: lesson, day: lessonDay })">Details</button>
+  <button type="button" ng-click="deleteLesson()">Delete Lesson</button>
+</p>
